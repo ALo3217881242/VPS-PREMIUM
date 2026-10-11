@@ -1,0 +1,28 @@
+name: Linux
+
+on:
+  workflow_dispatch:
+    inputs:
+      commands:
+        description: "Lenh Linux muon chay"
+        required: false
+        default: "uname -a"
+
+permissions: {}
+
+jobs:
+  linux:
+    runs-on: ubuntu-26.04
+    timeout-minutes: 30
+    steps:
+      - name: Thong tin he thong
+        run: |
+          cat /etc/os-release
+          uname -a
+          echo "CPU: $(nproc) vCPU"
+          free -h
+          df -h /
+      - name: Chay lenh cua ban
+        env:
+          CMDS: ${{ inputs.commands }}
+        run: bash -c "$CMDS"
