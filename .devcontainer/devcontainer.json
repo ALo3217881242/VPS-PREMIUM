@@ -1,0 +1,11 @@
+{
+  "name": "Ubuntu 26.04 desktop (Selkies)",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu26.04",
+  "runArgs": ["--shm-size=2g"],
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": { "label": "Desktop", "onAutoForward": "silent" }
+  },
+  "postCreateCommand": "bash .devcontainer/install-desktop.sh",
+  "postStartCommand": "bash .devcontainer/start-desktop.sh"
+}
