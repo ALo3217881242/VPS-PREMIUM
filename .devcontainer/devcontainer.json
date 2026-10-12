@@ -2,9 +2,9 @@
   "name": "Ubuntu 26.04 desktop (Selkies)",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu26.04",
   "hostRequirements": {
-    "cpus": 16,
-    "memory": "64gb",
-    "storage": "128gb"
+    "cpus": 8,
+    "memory": "32gb",
+    "storage": "64gb"
   },
   "runArgs": ["--shm-size=16g"],
   "forwardPorts": [8080],
