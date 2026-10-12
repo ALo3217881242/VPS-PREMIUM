@@ -3,7 +3,7 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu26.04",
   "hostRequirements": {
     "cpus": 32,
-    "memory": "128gb",
+    "memory": "64gb",
     "storage": "128gb"
   },
   "runArgs": ["--shm-size=16g"],
