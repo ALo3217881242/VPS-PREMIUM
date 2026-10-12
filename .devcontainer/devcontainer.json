@@ -2,7 +2,7 @@
   "name": "Ubuntu 26.04 desktop (Selkies)",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu26.04",
   "hostRequirements": {
-    "cpus": 32,
+    "cpus": 16,
     "memory": "64gb",
     "storage": "128gb"
   },
